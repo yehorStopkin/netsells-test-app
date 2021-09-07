@@ -51,7 +51,7 @@
                 v-validate="aboutYouValidator"
                 type="textarea"
                 :placeholder="aboutYourPlaceholder"
-                rows="4"
+                rows="9"
                 resize="none"
                 @change="onAboutYouChange"
             />
