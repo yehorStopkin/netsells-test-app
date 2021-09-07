@@ -136,7 +136,7 @@
                 stepNumber: Step.PERSONAL_INFO,
                 filingPercentage: this.filingOfPersonalInfo,
                 isCompleted: this.isPersonalInfoCompleted,
-                title: 'Step 1',
+                title: 'STEP 1',
                 subtitle: 'Personal Details',
                 details:
                     'Please complete your personal details section by clicking complete.',
@@ -153,7 +153,7 @@
                 stepNumber: Step.ADDITIONAL_INFO,
                 filingPercentage: this.filingOfAdditionalInfo,
                 isCompleted: this.isAdditionalInfoCompleted,
-                title: 'Step 2',
+                title: 'STEP 2',
                 subtitle: 'More About You',
                 details: 'Please complete this section by clicking complete.',
             } as ApplicationStepInfoData;
@@ -169,7 +169,7 @@
                 stepNumber: Step.ADDITIONAL_FILES,
                 filingPercentage: this.filingOfAdditionalFiles,
                 isCompleted: this.isAdditionalFilesCompleted,
-                title: 'Step 3',
+                title: 'STEP 3',
                 subtitle: 'Files Upload',
                 details: 'Just upload your cover letter to complete this section.',
             } as ApplicationStepInfoData;
