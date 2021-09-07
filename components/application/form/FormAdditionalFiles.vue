@@ -414,6 +414,9 @@
             text-overflow: ellipsis
             white-space: nowrap
 
+            &-wrapper
+                margin-bottom: 10px
+
             .light &
                 color: variables.$lightSchemeExtraGray
 
