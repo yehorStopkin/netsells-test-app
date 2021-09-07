@@ -370,7 +370,7 @@
         font-family: "Oswald"
         font-size: 22px
 
-        .ligth &
+        .light &
             color: variables.$lightSchemeExtraGray
 
         .dark &
