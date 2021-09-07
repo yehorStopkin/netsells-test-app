@@ -139,6 +139,8 @@
             &__subtitle
                 margin-bottom: 30px
                 font-family: "Heebo"
+                box-sizing: content-box
+                height: 88px
                 font-weight: bold
                 font-size: 30px
 
