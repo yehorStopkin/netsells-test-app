@@ -40,7 +40,6 @@
     justify-content: center
 
     &__title
-        margin-bottom: 20px
         font-family: "Heebo"
         font-size: 30px
         font-weight: bold

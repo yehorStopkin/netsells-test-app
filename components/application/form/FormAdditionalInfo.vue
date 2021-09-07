@@ -330,7 +330,7 @@
     width: 485px
 
     &__header
-        margin: 65px 0
+        margin: 65px 0 60px 0
 
     &__field
         margin-bottom: 30px
