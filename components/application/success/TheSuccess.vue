@@ -57,7 +57,7 @@
          * @returns {string}
          */
         get message(): string {
-            return 'Our team will response to you within the next 48h';
+            return 'Our team will respond to you within the next 48h';
         }
 
         /**
@@ -81,13 +81,13 @@
     justify-content: center
 
     &__title
-        margin-bottom: 30px
+        margin-bottom: 5px
         font-family: "Oswald"
         font-size: 28px
         color: variables.$liveColor
 
     &__subtitle
-        margin-bottom: 45px
+        margin-bottom: 12px
         font-family: "Heebo"
         font-size: 60px
         font-weight: 900
