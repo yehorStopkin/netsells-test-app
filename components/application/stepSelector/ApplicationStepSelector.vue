@@ -212,7 +212,6 @@
                 font-family: "Heebo"
                 font-size: 30px
                 font-weight: bold
-                margin-bottom: 13px
 
                 .light &
                     color: variables.$lightSchemeExtraGray
