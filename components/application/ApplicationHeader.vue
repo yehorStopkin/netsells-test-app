@@ -31,7 +31,7 @@
 
     div:first-child
         position: absolute
-        left: 0
+        left: 35px
         font-size: 22px
 
     div:last-child
