@@ -76,14 +76,14 @@
     &__title
         font-family: "Oswald"
         font-size: 28px
-        margin-bottom: 30px
+        margin-bottom: 5px
         color: variables.$liveColor
 
     &__subtitle
         text-align: center
         font-family: "Heebo"
         font-size: 60px
-        margin-bottom: 125px
+        margin-bottom: 110px
         font-weight: 900
 
         .light &
