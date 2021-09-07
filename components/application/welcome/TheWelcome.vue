@@ -49,7 +49,7 @@
          * @returns {string}
          */
         get subtitle(): string {
-            return 'We\'re excited to see what you can do!';
+            return 'We’re excited to see what you can do!';
         }
 
         /**
