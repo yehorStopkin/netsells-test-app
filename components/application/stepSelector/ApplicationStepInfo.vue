@@ -107,7 +107,7 @@
 
     &__wrapper
         width: 300px
-        height: 386px
+        height: 320px
         box-sizing: border-box
         border: 3px solid
         border-top-right-radius: 5px
@@ -126,7 +126,7 @@
                 margin-bottom: 40px
 
             &__title
-                margin-bottom: 25px
+                margin-bottom: 10px
                 font-family: "Oswald"
                 font-size: 18px
 
@@ -137,7 +137,7 @@
                     color: #c6c6c6
 
             &__subtitle
-                margin-bottom: 30px
+                margin-bottom: 5px
                 font-family: "Heebo"
                 box-sizing: content-box
                 height: 88px
@@ -151,7 +151,6 @@
                     color: #f4f4f4
 
             &__details
-                margin-bottom: 70px
                 font-family: "Oswald"
                 font-size: 16px
 
