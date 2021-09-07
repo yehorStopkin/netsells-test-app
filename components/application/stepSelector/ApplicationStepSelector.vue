@@ -1,36 +1,36 @@
 <template>
-    <div class="step-selector">
-        <div class="step-selector__header">
-            <div class="step-selector__title">
+    <div class="application-step-selector">
+        <div class="application-step-selector__header">
+            <div class="application-step-selector__title">
                 {{ title }}
             </div>
 
-            <div class="step-selector__subtitle">
+            <div class="application-step-selector__subtitle">
                 {{ subtitle }}
             </div>
         </div>
 
-        <div class="step-selector__steps">
+        <div class="application-step-selector__steps">
             <application-step-info
-                class="step-selector__step"
+                class="application-step-selector__step"
                 :data="personalInfoStep"
                 @selected="onSelectStep"
             />
 
             <application-step-info
-                class="step-selector__step"
+                class="application-step-selector__step"
                 :data="additionalInfoStep"
                 @selected="onSelectStep"
             />
 
             <application-step-info
-                class="step-selector__step"
+                class="application-step-selector__step"
                 :data="additionalFilesStep"
                 @selected="onSelectStep"
             />
         </div>
 
-        <div v-if="canSubmit" class="step-selector__actions">
+        <div v-if="canSubmit" class="application-step-selector__actions">
             <app-button
                 v-loading="loading"
                 padding-top="24"
@@ -200,14 +200,14 @@
 <style lang="sass">
 @use "~~/assets/styles/variables"
 
-.step-selector
+.application-step-selector
     &__header
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
 
-        .step-selector
+        .application-step-selector
             &__title
                 font-family: "Heebo"
                 font-size: 30px
