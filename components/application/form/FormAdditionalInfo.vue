@@ -42,7 +42,7 @@
 
         <div class="form-additional-info__field">
             <div class="form-additional-info__field-title required">
-                <label for="aboutYou">About you</label>
+                <label for="aboutYou">About You</label>
             </div>
 
             <el-input
