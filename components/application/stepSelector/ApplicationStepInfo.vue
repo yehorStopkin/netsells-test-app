@@ -126,7 +126,6 @@
                 margin-bottom: 40px
 
             &__title
-                margin-bottom: 10px
                 font-family: "Oswald"
                 font-size: 18px
 
@@ -137,7 +136,6 @@
                     color: #c6c6c6
 
             &__subtitle
-                margin-bottom: 5px
                 font-family: "Heebo"
                 box-sizing: content-box
                 height: 88px
