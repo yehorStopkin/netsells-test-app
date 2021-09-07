@@ -101,7 +101,7 @@
          * @returns {string}
          */
         get subtitle(): string {
-            return 'Select the step you wish to complete';
+            return 'Select the step you wish to complete.';
         }
 
         /**
