@@ -44,6 +44,7 @@
 
 <script lang="ts">
     import { Component } from 'vue-property-decorator';
+    import { Action } from 'vuex-class';
     import { Message } from 'element-ui';
     import TheWelcome from './welcome/TheWelcome.vue';
     import StepSelector from './stepSelector/ApplicationStepSelector.vue';
@@ -70,6 +71,9 @@
         mixins: [StyleMixin],
     })
     export default class TheApplication extends DataMixin {
+        // actions
+        @Action('application/setPhase') setPhase!: (phaze: Phase) => void
+        
         // fields
         scheme: typeof Scheme = Scheme;
         loading: boolean = false;
@@ -138,10 +142,7 @@
                     return;
                 }
                 default: {
-                    this.$store.dispatch(
-                        'application/setPhase',
-                        Phase.STEP_SELECTING,
-                    );
+                    this.setPhase(Phase.STEP_SELECTING);
                 }
             }
         }
@@ -175,7 +176,7 @@
 
                 await sendApplication(request);
 
-                this.$store.dispatch('application/setPhase', Phase.SUCCESS);
+                this.setPhase(Phase.SUCCESS);
             } catch (error) {
                 this.showRequestErrors(error);
             } finally {

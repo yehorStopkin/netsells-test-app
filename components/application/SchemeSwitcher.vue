@@ -46,23 +46,21 @@
 
 <script lang="ts">
     import { Vue, Component } from 'vue-property-decorator';
+    import { Action, Getter } from 'vuex-class';
     import { Scheme } from '~/modules/types';
 
     @Component
     export default class SchemeSwitcher extends Vue {
+        // actions 
+        @Action('setScheme') setScheme!: (scheme: Scheme) => void
+
+        // store getters
+        @Getter('scheme') currentScheme!: Scheme;
+
         // props
         scheme: typeof Scheme = Scheme;
 
         // getters
-        /**
-         * Getter for current scheme. 
-         * 
-         * @returns {Scheme}
-         */
-        get currentScheme(): Scheme {
-            return this.$store.getters.scheme;
-        }
-
         /**
          * Getter for alt text of dark scheme icon. 
          * 
@@ -110,7 +108,7 @@
                 return;
             }
 
-            this.$store.dispatch('setScheme', scheme);
+            this.setScheme(scheme);
         }
     }
 </script>

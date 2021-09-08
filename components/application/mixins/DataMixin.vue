@@ -1,5 +1,6 @@
 <script lang="ts" >
     import { Vue, Component } from 'vue-property-decorator';
+    import { Action } from 'vuex-class';
     import {
         AdditionalFiles,
         AdditionalInfo,
@@ -12,6 +13,9 @@
 
     @Component
     export default class DataMixin extends Vue {
+        // actions
+        @Action('application/setPhase') setPhase!: (phaze: Phase) => void
+
         // fields
         currentStep: Step = Step.PERSONAL_INFO;
         applicationForm: ApplicationForm = getDefaultApplicationForm();
@@ -147,7 +151,7 @@
          * Reset current phase. 
          */
         resetPhase(): void {
-            this.$store.dispatch('application/setPhase', Phase.WELCOME);
+            this.setPhase(Phase.WELCOME);
         }
 
         /**
@@ -156,7 +160,7 @@
          * @param {Phase} phase
          */
         selectPhase(phase: Phase): void {
-            this.$store.dispatch('application/setPhase', phase);
+            this.setPhase(phase);
         }
 
         /**

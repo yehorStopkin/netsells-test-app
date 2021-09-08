@@ -1,21 +1,15 @@
 <script lang="ts">
     import { Vue, Component } from 'vue-property-decorator';
+    import { Getter } from 'vuex-class';
     import { Phase, Scheme } from '@/modules/types';
 
     @Component
     export default class StyleMixin extends Vue {
-        // fields
+        // store getters
+        @Getter('application/phase') currentPhase!: Phase
+        @Getter('scheme') currentScheme!: Scheme;
 
         // getters
-        /**
-         * Getter for current phase. 
-         * 
-         * @returns {Phase}
-         */
-        get currentPhase(): Phase {
-            return this.$store.getters['application/phase'];
-        }
-
         /**
          * Getter for background class, according of current phase. 
          * 
@@ -100,15 +94,6 @@
          */
         get isFormFillingPhase(): boolean {
             return this.currentPhase === Phase.FORM_FILING;
-        }
-
-        /**
-         * Getter for scheme. 
-         * 
-         * @returns {Scheme}
-         */
-        get currentScheme(): Scheme {
-            return this.$store.getters.scheme;
         }
     }
 </script>
