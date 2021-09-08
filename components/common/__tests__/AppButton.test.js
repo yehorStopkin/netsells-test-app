@@ -23,44 +23,86 @@ describe('AppButton', () => {
     });
 
     test('component with border-radius 10', () => {
-        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', borderRadius: 10 } });
+        const borderRadius = 10;
+        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', borderRadius } });
 
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const button = wrapper.find(buttonSelector);
+        const styles = button.attributes('style') || '';
+
+        const matchStyle = `border-radius: ${ borderRadius }px`;
+
+        expect(styles.includes(matchStyle)).toBeTruthy();
     });
 
     test('component with width 100', () => {
-        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', width: 100 } });
+        const width = 100;
+        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', width } });
 
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const button = wrapper.find(buttonSelector);
+        const styles = button.attributes('style') || '';
+
+        const matchStyle = `width: ${ width }px`;
+
+        expect(styles.includes(matchStyle)).toBeTruthy();
     });
 
     test('component with height 100', () => {
-        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', height: 100 } });
+        const height = 100;
+        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', height } });
 
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const button = wrapper.find(buttonSelector);
+        const styles = button.attributes('style') || '';
+
+        const matchStyle = `height: ${ height }px`;
+
+        expect(styles.includes(matchStyle)).toBeTruthy();
+    });
+
+    test('component with height 0', () => {
+        const height = 0;
+        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', height } });
+
+        const button = wrapper.find(buttonSelector);
+        const styles = button.attributes('style') || '';
+
+        const matchStyle = `height: ${ height }px`;
+
+        expect(!styles.includes(matchStyle)).toBeTruthy();
     });
 
     test('component with paddingTop 10', () => {
-        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', paddingTop: 10 } });
+        const paddingTop = 100;
+        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', paddingTop } });
 
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const button = wrapper.find(buttonSelector);
+        const styles = button.attributes('style') || '';
+
+        const matchStyle = `padding-top: ${ paddingTop }px`;
+
+        expect(styles.includes(matchStyle)).toBeTruthy();
     });
 
     test('component with paddingBottom 10', () => {
-        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', paddingBottom: 10 } });
+        const paddingBottom = 100;
+        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', paddingBottom } });
 
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const button = wrapper.find(buttonSelector);
+        const styles = button.attributes('style') || '';
+
+        const matchStyle = `padding-bottom: ${ paddingBottom }px`;
+
+        expect(styles.includes(matchStyle)).toBeTruthy();
     });
 
     test('component with fontSize 15', () => {
-        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', fontSize: 15 } });
+        const fontSize = 15;
+        const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', fontSize } });
 
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const button = wrapper.find(buttonSelector);
+        const styles = button.attributes('style') || '';
+
+        const matchStyle = `font-size: ${ fontSize }px`;
+
+        expect(styles.includes(matchStyle)).toBeTruthy();
     });
 });

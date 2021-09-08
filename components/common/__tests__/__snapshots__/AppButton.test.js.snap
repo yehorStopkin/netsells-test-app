@@ -1,20 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppButton component with border-radius 10 1`] = `
-<div
-  class="app-button"
-  style="border-radius: 10; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px;"
->
-  
-    test text
-
-</div>
-`;
-
 exports[`AppButton component with default props 1`] = `
 <div
   class="app-button"
-  style="border-radius: 1; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px;"
+  style="border-radius: 1px; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px;"
 >
   
     test text
@@ -25,7 +14,7 @@ exports[`AppButton component with default props 1`] = `
 exports[`AppButton component with fontSize 15 1`] = `
 <div
   class="app-button"
-  style="border-radius: 1; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 15px;"
+  style="border-radius: 1px; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 15px;"
 >
   
     test text
@@ -36,7 +25,7 @@ exports[`AppButton component with fontSize 15 1`] = `
 exports[`AppButton component with height 100 1`] = `
 <div
   class="app-button"
-  style="border-radius: 1; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px; height: 100px;"
+  style="border-radius: 1px; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px; height: 100px;"
 >
   
     test text
@@ -47,7 +36,7 @@ exports[`AppButton component with height 100 1`] = `
 exports[`AppButton component with paddingBottom 10 1`] = `
 <div
   class="app-button"
-  style="border-radius: 1; width: 100px; padding-top: 14px; padding-bottom: 10px; font-size: 20px;"
+  style="border-radius: 1px; width: 100px; padding-top: 14px; padding-bottom: 10px; font-size: 20px;"
 >
   
     test text
@@ -58,7 +47,7 @@ exports[`AppButton component with paddingBottom 10 1`] = `
 exports[`AppButton component with paddingTop 10 1`] = `
 <div
   class="app-button"
-  style="border-radius: 1; width: 100px; padding-top: 10px; padding-bottom: 19px; font-size: 20px;"
+  style="border-radius: 1px; width: 100px; padding-top: 10px; padding-bottom: 19px; font-size: 20px;"
 >
   
     test text
@@ -69,7 +58,7 @@ exports[`AppButton component with paddingTop 10 1`] = `
 exports[`AppButton component with width 100 1`] = `
 <div
   class="app-button"
-  style="border-radius: 1; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px;"
+  style="border-radius: 1px; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px;"
 >
   
     test text

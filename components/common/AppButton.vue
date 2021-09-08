@@ -40,7 +40,7 @@
          */
         get styleObject(): object {
             const styleObject = {
-                borderRadius: this.borderRadius,
+                borderRadius: `${ this.borderRadius }px`,
                 width: `${ this.width }px`,
                 paddingTop: `${ this.paddingTop }px`,
                 paddingBottom: `${ this.paddingBottom }px`,
