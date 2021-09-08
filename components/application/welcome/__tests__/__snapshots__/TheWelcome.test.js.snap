@@ -21,6 +21,7 @@ exports[`TheWelcome component default 1`] = `
   >
     <div
       border-radius="0"
+      data-test-id="app-button"
       padding-bottom="29"
       padding-top="24"
       text="BEGIN"
