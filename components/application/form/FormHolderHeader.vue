@@ -130,7 +130,7 @@
 
         // handlers
         /**
-         * handler for sper select. 
+         * Handler for step select. 
          * 
          * @param {Step} step
          */

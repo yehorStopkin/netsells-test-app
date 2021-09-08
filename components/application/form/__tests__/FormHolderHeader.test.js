@@ -16,17 +16,59 @@ describe('FormHolderHeader', () => {
         const wrapper = shallowMount(FormHolderHeader, { propsData: { ...getData() } });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
+
+        const rootElement = wrapper.findAll('.form-holder-header');
+        expect(rootElement.length).toBe(1);
+        
+        const applicationSteps = wrapper.findAll('.form-holder-header__application-step');
+        expect(applicationSteps.length).toBe(3);
     });
 
-    test('component selected step 1', () => {
+    test('selected step 1', () => {
+        const wrapper = shallowMount(FormHolderHeader, { propsData: { ...getData(0) } });
+
+        expect(wrapper.vm.personalInfoSelected).toBe(true);
+        expect(wrapper.vm.additionalInfoSelected).toBe(false);
+        expect(wrapper.vm.additionalFilesSelected).toBe(false);
+    });
+
+    test('selected step 2', () => {
         const wrapper = shallowMount(FormHolderHeader, { propsData: { ...getData(1) } });
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        expect(wrapper.vm.personalInfoSelected).toBe(false);
+        expect(wrapper.vm.additionalInfoSelected).toBe(true);
+        expect(wrapper.vm.additionalFilesSelected).toBe(false);
     });
 
-    test('component different filing percentage', () => {
-        const wrapper = shallowMount(FormHolderHeader, { propsData: { ...getData(0, 20, 50, 100) } });
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+    test('selected step 3', () => {
+        const wrapper = shallowMount(FormHolderHeader, { propsData: { ...getData(2) } });
+        expect(wrapper.vm.personalInfoSelected).toBe(false);
+        expect(wrapper.vm.additionalInfoSelected).toBe(false);
+        expect(wrapper.vm.additionalFilesSelected).toBe(true);
+    });
+
+    test('check onStepSelect with availableStep', () => {
+        const wrapper = shallowMount(FormHolderHeader, { propsData: { ...getData(0, 20, 50, 100, [0, 1, 2]) } });
+
+        wrapper.vm.onStepSelect(0);
+        expect(wrapper.emitted()['step-selected']).toBeTruthy();
+
+        wrapper.vm.onStepSelect(1);
+        expect(wrapper.emitted()['step-selected']).toBeTruthy();
+
+        wrapper.vm.onStepSelect(2);
+        expect(wrapper.emitted()['step-selected']).toBeTruthy();
+    });
+
+    test('check onStepSelect with unavailableSteps', () => {
+        const wrapper = shallowMount(FormHolderHeader, { propsData: { ...getData(0, 20, 50, 100, []) } });
+
+        wrapper.vm.onStepSelect(0);
+        expect(wrapper.emitted()['step-selected']).not.toBeTruthy();
+
+        wrapper.vm.onStepSelect(1);
+        expect(wrapper.emitted()['step-selected']).not.toBeTruthy();
+
+        wrapper.vm.onStepSelect(2);
+        expect(wrapper.emitted()['step-selected']).not.toBeTruthy();
     });
 });
