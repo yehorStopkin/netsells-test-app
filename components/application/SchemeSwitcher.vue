@@ -50,7 +50,7 @@
 
     @Component
     export default class SchemeSwitcher extends Vue {
-        // fields
+        // props
         scheme: typeof Scheme = Scheme;
 
         // getters

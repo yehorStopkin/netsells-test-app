@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SchemeSwitcher component default 1`] = `
+<div
+  class="scheme-switcher"
+>
+  <div
+    class="scheme-switcher__icon-wrapper"
+  >
+    <div
+      class="scheme-switcher__icon"
+    >
+      <img
+        alt="Dark mode."
+        src="~/assets/common/moon.svg"
+      />
+    </div>
+  </div>
+   
+  <div
+    class="scheme-switcher__icon-wrapper"
+  >
+    <div
+      class="scheme-switcher__icon"
+    >
+      <div
+        class="scheme-switcher__icon-sun-badge"
+        is-dot=""
+      >
+        <img
+          alt="Light mode."
+          src="~/assets/common/sun.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

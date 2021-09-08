@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheApplication component default 1`] = `
+<div
+  class="the-application light"
+>
+  <application-header-stub />
+   
+  <div
+    class="the-application__component"
+  >
+    <the-welcome-stub
+      available-steps="0"
+      current-step="0"
+      filing-of-additional-files="0"
+      filing-of-additional-info="0"
+      filing-of-personal-info="0"
+    />
+  </div>
+   
+  <scheme-switcher-stub />
+</div>
+`;

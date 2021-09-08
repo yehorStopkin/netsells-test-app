@@ -1,14 +1,5 @@
 import Vue from 'vue';
 
-Vue.directive('focus', {
-    // Когда привязанный элемент вставлен в DOM...
-    inserted: (el) => {
-        // Переключаем фокус на элемент
-        const input = el.getElementsByTagName('input')[0];
-        input.focus();
-    },
-});
-
 /**
  * Function for validation directive.
  * 
