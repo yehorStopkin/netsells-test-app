@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar empty bar 1`] = `
+<div
+  class="progress-bar"
+>
+  <div
+    class="progress-bar__empty"
+  />
+   
+  <div
+    class="progress-bar__filled"
+    style="width: 0%;"
+  />
+</div>
+`;
+
+exports[`ProgressBar full-filled bar 1`] = `
+<div
+  class="progress-bar"
+>
+  <div
+    class="progress-bar__empty"
+  />
+   
+  <div
+    class="progress-bar__filled"
+    style="width: 100%;"
+  />
+</div>
+`;
+
+exports[`ProgressBar half-filled bar 1`] = `
+<div
+  class="progress-bar"
+>
+  <div
+    class="progress-bar__empty"
+  />
+   
+  <div
+    class="progress-bar__filled"
+    style="width: 50%;"
+  />
+</div>
+`;
