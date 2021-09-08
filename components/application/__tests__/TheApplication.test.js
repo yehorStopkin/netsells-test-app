@@ -1,5 +1,4 @@
 const Vuex = require('vuex');
-const Vue = require('vue');
 const { shallowMount, createLocalVue } = require('@vue/test-utils');
 const TheApplication = require('@/components/application/TheApplication').default;
 const { getDefaultApplicationForm } = require('@/components/application/types/index');
@@ -28,7 +27,6 @@ describe('TheApplication', () => {
     });
 
     test('component default', () => {
-        //         const darkElementSelector = wrapper.find('*[data-test-id="darkThemeSwitcher"]');
         const wrapper = shallowMount(TheApplication, { store, localVue });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
