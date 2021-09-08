@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormHolderHeader component default 1`] = `
+<div
+  class="form-holder-header"
+>
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="0"
+    selected="true"
+    step="0"
+    title="STEP 1"
+  />
+   
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="0"
+    step="1"
+    title="STEP 2"
+  />
+   
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="0"
+    step="2"
+    title="STEP 3"
+  />
+</div>
+`;
+
+exports[`FormHolderHeader component different filing percentage 1`] = `
+<div
+  class="form-holder-header"
+>
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="20"
+    selected="true"
+    step="0"
+    title="STEP 1"
+  />
+   
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="50"
+    step="1"
+    title="STEP 2"
+  />
+   
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="100"
+    step="2"
+    title="STEP 3"
+  />
+</div>
+`;
+
+exports[`FormHolderHeader component selected step 1 1`] = `
+<div
+  class="form-holder-header"
+>
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="0"
+    step="0"
+    title="STEP 1"
+  />
+   
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="0"
+    selected="true"
+    step="1"
+    title="STEP 2"
+  />
+   
+  <application-step-stub
+    canbeselected="true"
+    class="form-holder-header__application-step"
+    progress="0"
+    step="2"
+    title="STEP 3"
+  />
+</div>
+`;
