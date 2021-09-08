@@ -111,12 +111,7 @@
 
             const errors = errorData.errors || {};
 
-            for (const error in errors) {
-                if (Object.prototype.hasOwnProperty.call(errors, error)) {
-                    const message = errors[error];
-                    errorMessage += `${ message } `;
-                }
-            }
+            errorMessage += Object.values(errors).join(' ');
 
             this.showErrorMessage(errorMessage);
         }

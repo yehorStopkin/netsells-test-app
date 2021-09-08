@@ -81,15 +81,11 @@
         get filingOfAdditionalInfo(): number {
             let result = 0;
 
-            result += this.additionalInfo.liveInUk !== null ? 33 : 0;
-            result += this.additionalInfo.gitProfile !== '' ? 33 : 0;
-            result += this.additionalInfo.aboutYou !== '' ? 33 : 0;
+            result += this.additionalInfo.liveInUk !== null ? 33.33 : 0;
+            result += this.additionalInfo.gitProfile !== '' ? 33.33 : 0;
+            result += this.additionalInfo.aboutYou !== '' ? 33.33 : 0;
 
-            if (result === 99) {
-                result = 100;
-            }
-
-            return result;
+            return Math.ceil(result);
         }
 
         /**
@@ -121,11 +117,7 @@
          * @returns {boolean}
          */
         get isAdditionalFilesCompleted(): boolean {
-            if (this.additionalFiles.cv === null) {
-                return false;
-            }
-
-            return true;
+            return this.additionalFiles.cv !== null;
         }
 
         /**
