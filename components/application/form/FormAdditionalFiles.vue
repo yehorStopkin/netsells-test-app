@@ -7,7 +7,7 @@
 
         <div class="form-additional-files__field">
             <el-upload
-                v-validate="cvValidatior"
+                v-validate="cvValidator"
                 drag
                 action=""
                 :auto-upload="autoUpload"
@@ -331,7 +331,7 @@
          * 
          * @returns {Validation}
          */
-        get cvValidatior(): Validation {
+        get cvValidator(): Validation {
             return {
                 skipValidation: !this.isCvDirty,
                 isValid: this.isCvValid,
