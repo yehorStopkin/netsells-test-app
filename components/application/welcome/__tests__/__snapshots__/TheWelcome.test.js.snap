@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheWelcome component default 1`] = `
+<div
+  class="the-welcome"
+>
+  <div
+    class="the-welcome__title"
+  >
+    Welcome
+  </div>
+   
+  <div
+    class="the-welcome__subtitle"
+  >
+    We’re excited to see what you can do!
+  </div>
+   
+  <div
+    class="the-welcome__actions"
+  >
+    <div
+      border-radius="0"
+      padding-bottom="29"
+      padding-top="24"
+      text="BEGIN"
+      width="160"
+    />
+  </div>
+</div>
+`;
