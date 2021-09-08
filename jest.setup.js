@@ -3,6 +3,7 @@ const { config } = require('@vue/test-utils');
 
 useMock = true;
 Vue.directive('validate', {});
+Vue.directive('loading', {});
 config.stubs.nuxt = { template: '<div />' };
 config.stubs['nuxt-link'] = { template: '<a><slot /></a>' };
 config.stubs['no-ssr'] = { template: '<span><slot /></span>' };

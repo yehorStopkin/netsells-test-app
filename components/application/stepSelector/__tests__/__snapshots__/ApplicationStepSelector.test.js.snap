@@ -1,5 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ApplicationStepSelector check if submitButton displayed when form completed 1`] = `
+<div
+  class="application-step-selector"
+>
+  <div
+    class="application-step-selector__header"
+  >
+    <div
+      class="application-step-selector__title"
+    >
+      
+            Applications Steps
+        
+    </div>
+     
+    <div
+      class="application-step-selector__subtitle"
+    >
+      
+            Select the step you wish to complete.
+        
+    </div>
+  </div>
+   
+  <div
+    class="application-step-selector__steps"
+  >
+    <application-step-info-stub
+      class="application-step-selector__step"
+      data="[object Object]"
+    />
+     
+    <application-step-info-stub
+      class="application-step-selector__step"
+      data="[object Object]"
+    />
+     
+    <application-step-info-stub
+      class="application-step-selector__step"
+      data="[object Object]"
+    />
+  </div>
+   
+  <div
+    class="application-step-selector__actions"
+  >
+    <div
+      border-radius="0"
+      padding-bottom="29"
+      padding-top="24"
+      text="SUBMIT APPLICATION"
+      width="220"
+    />
+  </div>
+</div>
+`;
+
 exports[`ApplicationStepSelector component default 1`] = `
 <div
   class="application-step-selector"
