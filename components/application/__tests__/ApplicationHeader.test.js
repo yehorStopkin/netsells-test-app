@@ -7,5 +7,11 @@ describe('ApplicationHeader', () => {
 
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
+
+        const rootElement = wrapper.find('.application-header');
+        expect(rootElement.exists()).toBeTruthy();
+
+        const textElements = wrapper.findAll('.application-header__text');
+        expect(textElements.length === 2).toBeTruthy();
     });
 });
