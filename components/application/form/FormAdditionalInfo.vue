@@ -81,7 +81,7 @@
     })
     export default class FormAdditionalInfo extends Vue {
         // props
-        @Prop(Object) readonly value!: AdditionalInfo;
+        @Prop(Object) readonly additionalInfo!: AdditionalInfo;
         @Prop(Number) readonly step!: Step;
 
         // fields
@@ -116,7 +116,7 @@
          * 
          * @param {AdditionalInfo} _additionalInfo 
          */
-        @Emit('input') inputEvent(_additionalInfo: AdditionalInfo): void {
+        @Emit('update:additionalInfo') updateEvent(_additionalInfo: AdditionalInfo): void {
             /* Empty */
         }
 
@@ -143,9 +143,9 @@
          * Created hook for init data. 
          */
         created(): void {
-            this.liveInUk = this.value.liveInUk;
-            this.gitProfile = this.value.gitProfile || '';
-            this.aboutYou = this.value.aboutYou;
+            this.liveInUk = this.additionalInfo.liveInUk;
+            this.gitProfile = this.additionalInfo.gitProfile || '';
+            this.aboutYou = this.additionalInfo.aboutYou;
         }
 
         // getters
@@ -181,7 +181,7 @@
          * 
          * @returns {AdditionalInfo}
          */
-        get additionalInfo(): AdditionalInfo {
+        get currentAdditionalInfo(): AdditionalInfo {
             return {
                 liveInUk: this.liveInUk,
                 gitProfile: this.gitProfile,
@@ -287,7 +287,7 @@
          */
         onLiveInUkChange(): void {
             this.isLiveInUkDirty = true;
-            this.inputEvent(this.additionalInfo);
+            this.updateEvent(this.currentAdditionalInfo);
         }
         
         /**
@@ -296,7 +296,7 @@
          */
         onGitProfileChange(): void {
             this.isGitProfileDirty = true;
-            this.inputEvent(this.additionalInfo);
+            this.updateEvent(this.currentAdditionalInfo);
         }
 
         /**
@@ -305,7 +305,7 @@
          */
         onAboutYouChange(): void {
             this.isAboutYouDirty = true;
-            this.inputEvent(this.additionalInfo);
+            this.updateEvent(this.currentAdditionalInfo);
         }
 
         /**

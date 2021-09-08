@@ -7,31 +7,15 @@
             :filing-of-additional-files="filingOfAdditionalFiles"
             :available-steps="availableSteps"
             @step-selected="onStepSelected"
-        />
-
-        <form-personal-info
-            v-if="showPersonalInfoForm"
-            :value="personalInfo"
-            :step="step.PERSONAL_INFO"
-            @input="onPersonalInfoChanged"
-            @validation-changed="onValidationChanged"
             @next-step-selected="nextStepSelectEvent"
         />
 
-        <form-additional-info
-            v-else-if="showAdditionalInfoForm"
-            :value="additionalInfo"
-            :step="step.ADDITIONAL_INFO"
-            @input="onAdditionalInfoChanged"
-            @validation-changed="onValidationChanged"
-            @next-step-selected="nextStepSelectEvent"
-        />
-
-        <form-additional-files
-            v-else-if="showAdditionalFilesForm"
-            :value="additionalFiles"
-            :step="step.ADDITIONAL_FILES"
-            @input="onAdditionalFilesChanged"
+        <component
+            :is="currentForm"
+            :step="currentStep"
+            :personal-info.sync="personalInfo"
+            :additional-info.sync="additionalInfo"
+            :additional-files.sync="additionalFiles"
             @validation-changed="onValidationChanged"
             @next-step-selected="nextStepSelectEvent"
         />
@@ -72,9 +56,9 @@
         @Prop(Array) readonly availableSteps!: Array<Step>;
 
         // fields
-        personalInfo: PersonalInfo = getDefaultPersonalInfo();
-        additionalInfo: AdditionalInfo = getDefaultAdditionalInfo();
-        additionalFiles: AdditionalFiles = getDefaultAdditionalFiles();
+        innerPersonalInfo: PersonalInfo = getDefaultPersonalInfo();
+        innerAdditionalInfo: AdditionalInfo = getDefaultAdditionalInfo();
+        innerAdditionalFiles: AdditionalFiles = getDefaultAdditionalFiles();
 
         isPersonalInfoValid: boolean = false;
         isAdditionalInfoValid: boolean = false;
@@ -110,9 +94,9 @@
 
         // hooks
         created(): void {
-            this.personalInfo = this.value.personalInfo;
-            this.additionalInfo = this.value.additionalInfo;
-            this.additionalFiles = this.value.additionalFiles;
+            this.innerPersonalInfo = this.value.personalInfo;
+            this.innerAdditionalInfo = this.value.additionalInfo;
+            this.innerAdditionalFiles = this.value.additionalFiles;
         }
 
         /**
@@ -149,10 +133,88 @@
          */
         get applicationForm(): ApplicationForm {
             return {
-                personalInfo: this.personalInfo,
-                additionalInfo: this.additionalInfo,
-                additionalFiles: this.additionalFiles,
+                personalInfo: this.innerPersonalInfo,
+                additionalInfo: this.innerAdditionalInfo,
+                additionalFiles: this.innerAdditionalFiles,
             } as ApplicationForm;
+        }
+
+        /**
+         * 
+         * Getter for name of component of current form. 
+         * 
+         * @returns {string} 
+         */
+        get currentForm(): string {
+            switch (this.currentStep) {
+                case Step.PERSONAL_INFO: {
+                    return 'form-personal-info';
+                }
+                case Step.ADDITIONAL_INFO: {
+                    return 'form-additional-info';
+                }
+                case Step.ADDITIONAL_FILES: {
+                    return 'form-additional-files';
+                }
+            }
+        }
+
+        /**
+         * Getter for personalInfo. 
+         * 
+         * @returns {PersonalInfo}
+         */
+        get personalInfo(): PersonalInfo {
+            return this.innerPersonalInfo;
+        }
+
+        /**
+         * Getter for additionalInfo. 
+         * 
+         * @returns {AdditionalInfo} 
+         */
+        get additionalInfo(): AdditionalInfo {
+            return this.innerAdditionalInfo;
+        }
+
+        /**
+         * Getter for additionalFiles. 
+         * 
+         * @returns {AdditionalFiles}
+         */
+        get additionalFiles(): AdditionalFiles {
+            return this.innerAdditionalFiles;
+        }
+
+        // setters
+        /**
+         * Setter for _personalInfo. 
+         * 
+         * @param {PersonalInfo} personalInfo
+         */
+        set personalInfo(personalInfo: PersonalInfo) {
+            this.innerPersonalInfo = personalInfo;
+            this.inputEvent(this.applicationForm);
+        }
+
+        /**
+         * Setter for _additionalInfo. 
+         * 
+         * @param {AdditionalInfo} additionalInfo
+         */
+        set additionalInfo(additionalInfo: AdditionalInfo) {
+            this.innerAdditionalInfo = additionalInfo;
+            this.inputEvent(this.applicationForm);
+        }
+
+        /**
+         * Setter for _additionalFiles. 
+         * 
+         * @param {AdditionalFiles} additionalFiles
+         */
+        set additionalFiles(additionalFiles: AdditionalFiles) {
+            this.innerAdditionalFiles = additionalFiles;
+            this.inputEvent(this.applicationForm);
         }
 
         // handlers

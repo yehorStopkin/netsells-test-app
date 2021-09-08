@@ -72,7 +72,7 @@
     })
     export default class FormPersonalInfo extends Vue {
         // props
-        @Prop(Object) readonly value!: PersonalInfo;
+        @Prop(Object) readonly personalInfo!: PersonalInfo;
         @Prop(Number) readonly step!: Step;
 
         // fields
@@ -106,7 +106,7 @@
          * 
          * @param {PersonalInfo} _personalInfo
          */
-        @Emit('input') inputEvent(_personalInfo: PersonalInfo): void {
+        @Emit('update:personalInfo') updateEvent(_personalInfo: PersonalInfo): void {
             /* Empty */
         }
 
@@ -130,10 +130,10 @@
 
         // hooks
         created(): void {
-            this.firstName = this.value.firstName;
-            this.lastName = this.value.lastName || '';
-            this.email = this.value.email;
-            this.phoneNumber = this.value.phoneNumber || '';
+            this.firstName = this.personalInfo.firstName;
+            this.lastName = this.personalInfo.lastName || '';
+            this.email = this.personalInfo.email;
+            this.phoneNumber = this.personalInfo.phoneNumber || '';
         }
 
         // getters
@@ -160,7 +160,7 @@
          * 
          * @returns {PersonalInfo}
          */
-        get personalInfo(): PersonalInfo {
+        get currentPersonalInfo(): PersonalInfo {
             return {
                 firstName: this.firstName,
                 lastName: this.lastName,
@@ -238,7 +238,7 @@
          * Handler fro changing unvalidated field.
          */
         onDataChange(): void {
-            this.inputEvent(this.personalInfo);
+            this.updateEvent(this.currentPersonalInfo);
         }
 
         /**
@@ -247,7 +247,7 @@
          */
         onFirstNameChange(): void {
             this.isFirstNameDirty = true;
-            this.inputEvent(this.personalInfo);
+            this.updateEvent(this.currentPersonalInfo);
         }
 
         /**
@@ -256,7 +256,7 @@
          */
         onEmailChange(): void {
             this.isEmailDirty = true;
-            this.inputEvent(this.personalInfo);
+            this.updateEvent(this.currentPersonalInfo);
         }
 
         /**

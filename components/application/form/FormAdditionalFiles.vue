@@ -118,7 +118,7 @@
     })
     export default class FormAdditionalFiles extends Vue {
         // props
-        @Prop(Object) readonly value!: AdditionalFiles;
+        @Prop(Object) readonly additionalFiles!: AdditionalFiles;
         @Prop(Number) readonly step!: Step;
 
         // fields
@@ -151,7 +151,7 @@
          * 
          * @param {AdditionalFiles} _additionalFiles
          */
-        @Emit('input') inputEvent(_additionalFiles: AdditionalFiles): void {
+        @Emit('update:additionalFiles') updateEvent(_additionalFiles: AdditionalFiles): void {
             /* Empty */
         }
 
@@ -175,8 +175,8 @@
 
         // hooks
         created(): void {
-            this.cv = this.value.cv;
-            this.coverLetter = this.value.coverLetter || null;
+            this.cv = this.additionalFiles.cv;
+            this.coverLetter = this.additionalFiles.coverLetter || null;
         }
 
         // getters
@@ -301,7 +301,7 @@
          * 
          * @returns {AdditionalFiles}
          */
-        get additionalFiles(): AdditionalFiles {
+        get currentAdditionalFiles(): AdditionalFiles {
             return {
                 cv: this.cv,
                 coverLetter: this.coverLetter,
@@ -358,7 +358,7 @@
         onCvChanged(cv: any): void {
             this.cv = cv;
             this.isCvDirty = true;
-            this.inputEvent(this.additionalFiles);
+            this.updateEvent(this.currentAdditionalFiles);
         }
 
         /**
@@ -368,7 +368,7 @@
          */
         onCoverLetterChanged(coverLetter: any): void {
             this.coverLetter = coverLetter;
-            this.inputEvent(this.additionalFiles);
+            this.updateEvent(this.currentAdditionalFiles);
         }
 
         /**
