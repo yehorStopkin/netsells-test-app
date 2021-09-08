@@ -1,0 +1,481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormPersonalInfo component default 1`] = `
+<div
+  class="form-personal-info"
+>
+  <form-header-stub
+    class="form-personal-info__header"
+    title="Personal Details"
+  />
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+    </div>
+     
+    <div
+      id="firstName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="lastName"
+      >
+        Second Name
+      </label>
+    </div>
+     
+    <div
+      id="lastName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="email"
+      >
+        Email Address
+      </label>
+    </div>
+     
+    <div
+      id="email"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="phoneNumber"
+      >
+        Phone Number
+      </label>
+    </div>
+     
+    <div
+      id="phoneNumber"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`FormPersonalInfo component email filled 1`] = `
+<div
+  class="form-personal-info"
+>
+  <form-header-stub
+    class="form-personal-info__header"
+    title="Personal Details"
+  />
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+    </div>
+     
+    <div
+      id="firstName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="lastName"
+      >
+        Second Name
+      </label>
+    </div>
+     
+    <div
+      id="lastName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="email"
+      >
+        Email Address
+      </label>
+    </div>
+     
+    <div
+      id="email"
+      value="Test email"
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="phoneNumber"
+      >
+        Phone Number
+      </label>
+    </div>
+     
+    <div
+      id="phoneNumber"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`FormPersonalInfo component firstName filled 1`] = `
+<div
+  class="form-personal-info"
+>
+  <form-header-stub
+    class="form-personal-info__header"
+    title="Personal Details"
+  />
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+    </div>
+     
+    <div
+      id="firstName"
+      value="Test first name"
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="lastName"
+      >
+        Second Name
+      </label>
+    </div>
+     
+    <div
+      id="lastName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="email"
+      >
+        Email Address
+      </label>
+    </div>
+     
+    <div
+      id="email"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="phoneNumber"
+      >
+        Phone Number
+      </label>
+    </div>
+     
+    <div
+      id="phoneNumber"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`FormPersonalInfo component lastName filled 1`] = `
+<div
+  class="form-personal-info"
+>
+  <form-header-stub
+    class="form-personal-info__header"
+    title="Personal Details"
+  />
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+    </div>
+     
+    <div
+      id="firstName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="lastName"
+      >
+        Second Name
+      </label>
+    </div>
+     
+    <div
+      id="lastName"
+      value="Test last name"
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="email"
+      >
+        Email Address
+      </label>
+    </div>
+     
+    <div
+      id="email"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="phoneNumber"
+      >
+        Phone Number
+      </label>
+    </div>
+     
+    <div
+      id="phoneNumber"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`FormPersonalInfo component phoneNumber filled 1`] = `
+<div
+  class="form-personal-info"
+>
+  <form-header-stub
+    class="form-personal-info__header"
+    title="Personal Details"
+  />
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+    </div>
+     
+    <div
+      id="firstName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="lastName"
+      >
+        Second Name
+      </label>
+    </div>
+     
+    <div
+      id="lastName"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title required"
+    >
+      <label
+        for="email"
+      >
+        Email Address
+      </label>
+    </div>
+     
+    <div
+      id="email"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__field"
+  >
+    <div
+      class="form-personal-info__field-title"
+    >
+      <label
+        for="phoneNumber"
+      >
+        Phone Number
+      </label>
+    </div>
+     
+    <div
+      id="phoneNumber"
+      value="Test phone number"
+    />
+  </div>
+   
+  <div
+    class="form-personal-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;

@@ -14,19 +14,19 @@ describe('FormAdditionalFiles', () => {
     };
 
     test('component default', () => {
-        const wrapper = shallowMount(FormAdditionalFiles, { propsData: { value: getValue(), step: 0 } });
+        const wrapper = shallowMount(FormAdditionalFiles, { propsData: { value: getValue(), step: 2 } });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
     });
 
     test('component uploaded cv', () => {
-        const wrapper = shallowMount(FormAdditionalFiles, { propsData: { value: getValue(uploadedFile), step: 0 } });
+        const wrapper = shallowMount(FormAdditionalFiles, { propsData: { value: getValue(uploadedFile), step: 2 } });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
     });
 
     test('component uploaded cover letter', () => {
-        const wrapper = shallowMount(FormAdditionalFiles, { propsData: { value: getValue(null, uploadedFile), step: 0 } });
+        const wrapper = shallowMount(FormAdditionalFiles, { propsData: { value: getValue(null, uploadedFile), step: 2 } });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
     });

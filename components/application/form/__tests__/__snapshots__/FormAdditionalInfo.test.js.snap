@@ -267,7 +267,7 @@ exports[`FormAdditionalInfo component gitProfile filled 1`] = `
 </div>
 `;
 
-exports[`FormAdditionalInfo component liveInUk 1`] = `
+exports[`FormAdditionalInfo component liveInUk fiiled 1`] = `
 <div
   class="form-additional-info"
 >

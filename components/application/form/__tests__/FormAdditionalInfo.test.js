@@ -16,7 +16,7 @@ describe('FormAdditionalInfo', () => {
         expect(wrapper.element).toMatchSnapshot();
     });
 
-    test('component liveInUk', () => {
+    test('component liveInUk fiiled', () => {
         const wrapper = shallowMount(FormAdditionalInfo, { propsData: { value: getValue(true), step: 1 } });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
