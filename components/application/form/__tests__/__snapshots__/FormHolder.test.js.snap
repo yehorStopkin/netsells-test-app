@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormHolder component default 1`] = `
+<div
+  class="form-holder"
+>
+  <form-holder-header-stub
+    availablesteps="0"
+    currentstep="0"
+    filingofadditionalfiles="0"
+    filingofadditionalinfo="0"
+    filingofpersonalinfo="0"
+  />
+   
+  <form-personal-info-stub
+    step="0"
+    value="[object Object]"
+  />
+</div>
+`;
