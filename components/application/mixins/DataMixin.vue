@@ -14,7 +14,7 @@
     @Component
     export default class DataMixin extends Vue {
         // actions
-        @Action('application/setPhase') setPhase!: (phaze: Phase) => void
+        @Action('application/setPhase') setPhase!: (phase: Phase) => void
 
         // fields
         currentStep: Step = Step.PERSONAL_INFO;

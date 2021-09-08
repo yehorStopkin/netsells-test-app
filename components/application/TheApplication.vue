@@ -72,7 +72,7 @@
     })
     export default class TheApplication extends DataMixin {
         // actions
-        @Action('application/setPhase') setPhase!: (phaze: Phase) => void
+        @Action('application/setPhase') setPhase!: (phase: Phase) => void
         
         // fields
         scheme: typeof Scheme = Scheme;
