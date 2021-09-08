@@ -1,56 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ApplicationStepInfo component completed 1`] = `
-<div
-  class="application-step-info"
->
-  <div
-    class="application-step-info__wrapper"
-  >
-    <progress-bar-stub
-      class="application-step-info__progress-bar"
-      progress="0"
-    />
-     
-    <div
-      class="application-step-info__title"
-    >
-      Test title
-    </div>
-     
-    <div
-      class="application-step-info__subtitle"
-    >
-      
-            Test subtitle
-        
-    </div>
-     
-    <div
-      class="application-step-info__details"
-    >
-      Test details
-    </div>
-  </div>
-   
-  <div
-    class="application-step-info__action"
-  >
-    <div
-      class="application-step-info__action"
-    >
-      <div
-        class="application-step-info__action-text"
-      >
-        
-                DONE
-            
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`ApplicationStepInfo component default 1`] = `
 <div
   class="application-step-info"
@@ -61,61 +10,6 @@ exports[`ApplicationStepInfo component default 1`] = `
     <progress-bar-stub
       class="application-step-info__progress-bar"
       progress="0"
-    />
-     
-    <div
-      class="application-step-info__title"
-    >
-      Test title
-    </div>
-     
-    <div
-      class="application-step-info__subtitle"
-    >
-      
-            Test subtitle
-        
-    </div>
-     
-    <div
-      class="application-step-info__details"
-    >
-      Test details
-    </div>
-  </div>
-   
-  <div
-    class="application-step-info__action"
-  >
-    <div
-      class="application-step-info__action"
-    >
-      <div
-        class="application-step-info__action-text"
-      >
-        
-                COMPLETE
-            
-      </div>
-       
-      <div
-        class="application-step-info__action_arrow-icon"
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`ApplicationStepInfo component half-filled  1`] = `
-<div
-  class="application-step-info"
->
-  <div
-    class="application-step-info__wrapper"
-  >
-    <progress-bar-stub
-      class="application-step-info__progress-bar"
-      progress="50"
     />
      
     <div
