@@ -3,12 +3,13 @@
         class="the-application"
         :class="[currentScheme === scheme.LIGHT ? 'light' : 'dark', backgroundClass]"
     >
-        <application-header />
+        <application-header data-test-id="application-header" />
 
         <div class="the-application__component" :style="componentStyleObject">
             <form-holder
                 v-if="isFormFillingPhase"
                 v-model="applicationForm"
+                data-test-id="form-holder"
                 :filing-of-personal-info="filingOfPersonalInfo"
                 :filing-of-additional-info="filingOfAdditionalInfo"
                 :filing-of-additional-files="filingOfAdditionalFiles"
@@ -21,6 +22,7 @@
             <component
                 :is="currentComponent"
                 v-else
+                data-test-id="dynamic-component"
                 :filing-of-personal-info="filingOfPersonalInfo"
                 :is-personal-info-completed="isPersonalInfoCompleted"
                 :filing-of-additional-info="filingOfAdditionalInfo"

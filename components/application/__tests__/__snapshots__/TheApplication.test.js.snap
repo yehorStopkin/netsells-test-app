@@ -4,7 +4,9 @@ exports[`TheApplication component default 1`] = `
 <div
   class="the-application light start"
 >
-  <application-header-stub />
+  <application-header-stub
+    data-test-id="application-header"
+  />
    
   <div
     class="the-application__component"
@@ -13,6 +15,7 @@ exports[`TheApplication component default 1`] = `
     <the-welcome-stub
       available-steps="0"
       current-step="0"
+      data-test-id="dynamic-component"
       filing-of-additional-files="0"
       filing-of-additional-info="0"
       filing-of-personal-info="0"

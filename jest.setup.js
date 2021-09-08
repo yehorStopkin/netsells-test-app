@@ -1,6 +1,7 @@
 const Vue = require('vue');
 const { config } = require('@vue/test-utils');
 
+useMock = true;
 Vue.directive('validate', {});
 config.stubs.nuxt = { template: '<div />' };
 config.stubs['nuxt-link'] = { template: '<a><slot /></a>' };
