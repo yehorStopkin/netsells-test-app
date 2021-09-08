@@ -66,11 +66,7 @@
          * @returns {boolean}
          */
         get isPersonalInfoCompleted(): boolean {
-            if (this.personalInfo.firstName === '' || this.personalInfo.email === '') {
-                return false;
-            }
-
-            return true;
+            return this.personalInfo.firstName !== '' && this.personalInfo.email !== '';
         }
 
         /**
