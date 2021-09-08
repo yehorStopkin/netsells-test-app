@@ -22,18 +22,18 @@ exports[`FormAdditionalInfo component aboutYou filled 1`] = `
       </label>
     </div>
      
-    <el-select
+    <div
       id="liveInUk"
       popper-class="form-additional-info__field-popper"
     >
-      <el-option
+      <div
         label="Yes"
         value="true"
       />
-      <el-option
+      <div
         label="No"
       />
-    </el-select>
+    </div>
   </div>
    
   <div
@@ -111,18 +111,18 @@ exports[`FormAdditionalInfo component default 1`] = `
       </label>
     </div>
      
-    <el-select
+    <div
       id="liveInUk"
       popper-class="form-additional-info__field-popper"
     >
-      <el-option
+      <div
         label="Yes"
         value="true"
       />
-      <el-option
+      <div
         label="No"
       />
-    </el-select>
+    </div>
   </div>
    
   <div
@@ -200,18 +200,18 @@ exports[`FormAdditionalInfo component gitProfile filled 1`] = `
       </label>
     </div>
      
-    <el-select
+    <div
       id="liveInUk"
       popper-class="form-additional-info__field-popper"
     >
-      <el-option
+      <div
         label="Yes"
         value="true"
       />
-      <el-option
+      <div
         label="No"
       />
-    </el-select>
+    </div>
   </div>
    
   <div
@@ -289,18 +289,19 @@ exports[`FormAdditionalInfo component liveInUk fiiled 1`] = `
       </label>
     </div>
      
-    <el-select
+    <div
       id="liveInUk"
       popper-class="form-additional-info__field-popper"
+      value="true"
     >
-      <el-option
+      <div
         label="Yes"
         value="true"
       />
-      <el-option
+      <div
         label="No"
       />
-    </el-select>
+    </div>
   </div>
    
   <div

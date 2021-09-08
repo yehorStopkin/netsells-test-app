@@ -13,8 +13,10 @@ exports[`FormHolder component default 1`] = `
   />
    
   <form-personal-info-stub
+    additional-files="[object Object]"
+    additional-info="[object Object]"
+    personalinfo="[object Object]"
     step="0"
-    value="[object Object]"
   />
 </div>
 `;

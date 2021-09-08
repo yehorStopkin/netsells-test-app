@@ -1,24 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ApplicationStep component can be selected 1`] = `
-<div
-  class="application-step"
->
-  <div
-    class="application-step__title"
-  >
-    
-        Test title
-    
-  </div>
-   
-  <progress-bar-stub
-    class="application-step__progress-bar"
-    progress="0"
-  />
-</div>
-`;
-
 exports[`ApplicationStep component default 1`] = `
 <div
   class="application-step"

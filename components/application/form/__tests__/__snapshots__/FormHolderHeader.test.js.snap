@@ -5,7 +5,6 @@ exports[`FormHolderHeader component default 1`] = `
   class="form-holder-header"
 >
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="0"
     selected="true"
@@ -14,7 +13,6 @@ exports[`FormHolderHeader component default 1`] = `
   />
    
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="0"
     step="1"
@@ -22,7 +20,6 @@ exports[`FormHolderHeader component default 1`] = `
   />
    
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="0"
     step="2"
@@ -36,7 +33,6 @@ exports[`FormHolderHeader component different filing percentage 1`] = `
   class="form-holder-header"
 >
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="20"
     selected="true"
@@ -45,7 +41,6 @@ exports[`FormHolderHeader component different filing percentage 1`] = `
   />
    
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="50"
     step="1"
@@ -53,7 +48,6 @@ exports[`FormHolderHeader component different filing percentage 1`] = `
   />
    
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="100"
     step="2"
@@ -67,7 +61,6 @@ exports[`FormHolderHeader component selected step 1 1`] = `
   class="form-holder-header"
 >
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="0"
     step="0"
@@ -75,7 +68,6 @@ exports[`FormHolderHeader component selected step 1 1`] = `
   />
    
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="0"
     selected="true"
@@ -84,7 +76,6 @@ exports[`FormHolderHeader component selected step 1 1`] = `
   />
    
   <application-step-stub
-    canbeselected="true"
     class="form-holder-header__application-step"
     progress="0"
     step="2"
