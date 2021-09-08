@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormHeader component default 1`] = `
+<div
+  class="form-header"
+>
+  <div
+    class="form-header__title"
+  >
+    
+        Test title
+    
+  </div>
+   
+  <div
+    class="form-header__subtitle"
+  >
+    <span
+      class="form-header__subtitle required"
+    >
+       Required fields are marked by an asterisk 
+    </span>
+  </div>
+</div>
+`;
