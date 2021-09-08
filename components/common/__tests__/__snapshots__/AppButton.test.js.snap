@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppButton component with default props 1`] = `
+<div
+  class="app-button"
+  style="border-radius: 1; width: 100px; padding-top: 14px; padding-bottom: 19px; font-size: 20px;"
+>
+  
+    test text
+
+</div>
+`;
