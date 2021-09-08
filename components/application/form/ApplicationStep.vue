@@ -1,7 +1,7 @@
 <template>
     <div
         class="application-step"
-        :class="[selected? 'selected' : '']"
+        :class="{ selected }"
         @click="onStepSelect"
     >
         <div class="application-step__title">
