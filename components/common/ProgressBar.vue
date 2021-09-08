@@ -1,8 +1,8 @@
 <template>
     <div class="progress-bar">
-        <div class="progress-bar__empty" />
+        <div class="progress-bar__empty js-progress-bar__empty" />
         <div
-            class="progress-bar__filled"
+            class="progress-bar__filled js-progress-bar__filled"
             :style="{ width: `${ filledWidth }` }"
         />
     </div>

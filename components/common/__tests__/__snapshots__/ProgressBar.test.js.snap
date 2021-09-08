@@ -5,11 +5,11 @@ exports[`ProgressBar empty bar 1`] = `
   class="progress-bar"
 >
   <div
-    class="progress-bar__empty"
+    class="progress-bar__empty js-progress-bar__empty"
   />
    
   <div
-    class="progress-bar__filled"
+    class="progress-bar__filled js-progress-bar__filled"
     style="width: 0%;"
   />
 </div>
@@ -20,11 +20,11 @@ exports[`ProgressBar full-filled bar 1`] = `
   class="progress-bar"
 >
   <div
-    class="progress-bar__empty"
+    class="progress-bar__empty js-progress-bar__empty"
   />
    
   <div
-    class="progress-bar__filled"
+    class="progress-bar__filled js-progress-bar__filled"
     style="width: 100%;"
   />
 </div>
@@ -35,11 +35,11 @@ exports[`ProgressBar half-filled bar 1`] = `
   class="progress-bar"
 >
   <div
-    class="progress-bar__empty"
+    class="progress-bar__empty js-progress-bar__empty"
   />
    
   <div
-    class="progress-bar__filled"
+    class="progress-bar__filled js-progress-bar__filled"
     style="width: 50%;"
   />
 </div>
