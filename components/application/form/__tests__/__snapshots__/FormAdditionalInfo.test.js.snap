@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormAdditionalInfo component aboutYou filled 1`] = `
+<div
+  class="form-additional-info"
+>
+  <form-header-stub
+    class="form-additional-info__header"
+    title="More About You"
+  />
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="liveInUk"
+      >
+        Do you live in the UK?
+      </label>
+    </div>
+     
+    <el-select
+      id="liveInUk"
+      popper-class="form-additional-info__field-popper"
+    >
+      <el-option
+        label="Yes"
+        value="true"
+      />
+      <el-option
+        label="No"
+      />
+    </el-select>
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="gitProfile"
+      >
+        Your Github Profile
+      </label>
+    </div>
+     
+    <div
+      id="gitProfile"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="aboutYou"
+      >
+        About You
+      </label>
+    </div>
+     
+    <div
+      id="aboutYou"
+      placeholder="Let us know more about you. What are you in to?"
+      resize="none"
+      rows="9"
+      type="textarea"
+      value="test about you"
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`FormAdditionalInfo component default 1`] = `
+<div
+  class="form-additional-info"
+>
+  <form-header-stub
+    class="form-additional-info__header"
+    title="More About You"
+  />
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="liveInUk"
+      >
+        Do you live in the UK?
+      </label>
+    </div>
+     
+    <el-select
+      id="liveInUk"
+      popper-class="form-additional-info__field-popper"
+    >
+      <el-option
+        label="Yes"
+        value="true"
+      />
+      <el-option
+        label="No"
+      />
+    </el-select>
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="gitProfile"
+      >
+        Your Github Profile
+      </label>
+    </div>
+     
+    <div
+      id="gitProfile"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="aboutYou"
+      >
+        About You
+      </label>
+    </div>
+     
+    <div
+      id="aboutYou"
+      placeholder="Let us know more about you. What are you in to?"
+      resize="none"
+      rows="9"
+      type="textarea"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`FormAdditionalInfo component gitProfile filled 1`] = `
+<div
+  class="form-additional-info"
+>
+  <form-header-stub
+    class="form-additional-info__header"
+    title="More About You"
+  />
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="liveInUk"
+      >
+        Do you live in the UK?
+      </label>
+    </div>
+     
+    <el-select
+      id="liveInUk"
+      popper-class="form-additional-info__field-popper"
+    >
+      <el-option
+        label="Yes"
+        value="true"
+      />
+      <el-option
+        label="No"
+      />
+    </el-select>
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="gitProfile"
+      >
+        Your Github Profile
+      </label>
+    </div>
+     
+    <div
+      id="gitProfile"
+      value="test git profile"
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="aboutYou"
+      >
+        About You
+      </label>
+    </div>
+     
+    <div
+      id="aboutYou"
+      placeholder="Let us know more about you. What are you in to?"
+      resize="none"
+      rows="9"
+      type="textarea"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`FormAdditionalInfo component liveInUk 1`] = `
+<div
+  class="form-additional-info"
+>
+  <form-header-stub
+    class="form-additional-info__header"
+    title="More About You"
+  />
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="liveInUk"
+      >
+        Do you live in the UK?
+      </label>
+    </div>
+     
+    <el-select
+      id="liveInUk"
+      popper-class="form-additional-info__field-popper"
+    >
+      <el-option
+        label="Yes"
+        value="true"
+      />
+      <el-option
+        label="No"
+      />
+    </el-select>
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="gitProfile"
+      >
+        Your Github Profile
+      </label>
+    </div>
+     
+    <div
+      id="gitProfile"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__field"
+  >
+    <div
+      class="form-additional-info__field-title required"
+    >
+      <label
+        for="aboutYou"
+      >
+        About You
+      </label>
+    </div>
+     
+    <div
+      id="aboutYou"
+      placeholder="Let us know more about you. What are you in to?"
+      resize="none"
+      rows="9"
+      type="textarea"
+      value=""
+    />
+  </div>
+   
+  <div
+    class="form-additional-info__actions"
+  >
+    <div
+      text="NEXT"
+      width="115"
+    />
+  </div>
+</div>
+`;
