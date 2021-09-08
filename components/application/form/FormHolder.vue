@@ -100,33 +100,6 @@
         }
 
         /**
-         * Getter for checking if show form of personal info. 
-         * 
-         * @returns {boolean}
-         */
-        get showPersonalInfoForm(): boolean {
-            return this.currentStep === Step.PERSONAL_INFO;
-        }
-
-        /**
-         * Getter for checking if show form of additional info. 
-         * 
-         * @returns {boolean}
-         */
-        get showAdditionalInfoForm(): boolean {
-            return this.currentStep === Step.ADDITIONAL_INFO;
-        }
-
-        /**
-         * Getter for checking if show form of additional files. 
-         * 
-         * @returns {boolean}
-         */
-        get showAdditionalFilesForm(): boolean {
-            return this.currentStep === Step.ADDITIONAL_FILES;
-        }
-
-        /**
          * Getter for applicationForm. 
          * 
          * @returns {ApplicationForm}
@@ -218,36 +191,6 @@
         }
 
         // handlers
-        /**
-         * Handler for changing personalInfo. 
-         * 
-         * @param {PersonalInfo} personalInfo
-         */
-        onPersonalInfoChanged(personalInfo: PersonalInfo): void {
-            this.personalInfo = personalInfo;
-            this.inputEvent(this.applicationForm);
-        }
-
-        /**
-         * Handler for changing additionalInfo. 
-         * 
-         * @param {AdditionalInfo} additionalInfo
-         */
-        onAdditionalInfoChanged(additionalInfo: AdditionalInfo): void {
-            this.additionalInfo = additionalInfo;
-            this.inputEvent(this.applicationForm);
-        }
-
-        /**
-         * Handler for changing additionalFiles. 
-         * 
-         * @param {AdditionalFiles} additionalFiles
-         */
-        onAdditionalFilesChanged(additionalFiles: AdditionalFiles): void {
-            this.additionalFiles = additionalFiles;
-            this.inputEvent(this.applicationForm);
-        }
-
         /**
          * Handler for changing form valid for selected step. 
          * 

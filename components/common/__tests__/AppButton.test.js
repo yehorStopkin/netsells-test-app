@@ -2,18 +2,24 @@ const { shallowMount } = require('@vue/test-utils');
 const AppButton = require('@/components/common/AppButton').default;
 
 describe('AppButton', () => {
+    const buttonSelector = '.app-button';
+
     test('component with default props', () => {
         const wrapper = shallowMount(AppButton, { propsData: { text: 'test text' } });
 
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
+
+        const button = wrapper.find(buttonSelector);
+        expect(button.exists()).toBeTruthy();
     });
 
-    test('component disabled', () => {
+    test('check if button disabled', () => {
         const wrapper = shallowMount(AppButton, { propsData: { text: 'test text', disabled: true } });
 
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const button = wrapper.find(buttonSelector);
+
+        expect(button.attributes('disabled')).toBeTruthy();
     });
 
     test('component with border-radius 10', () => {
