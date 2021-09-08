@@ -30,7 +30,6 @@
         // props
         @Prop(Number) readonly step!: Step;
         @Prop(Boolean) readonly selected!: boolean;
-        @Prop(Boolean) readonly canBeSelected!: boolean;
         @Prop(String) readonly title!: string;
         @Prop(Number) readonly progress!: number;
 
@@ -47,13 +46,9 @@
 
         // handlers
         /**
-         * Foo. 
+         * Handler for step selecting.
          */
         onStepSelect(): void {
-            if (!this.canBeSelected) {
-                return;
-            }
-
             this.stepSelectEvent(this.step);
         }
     }
