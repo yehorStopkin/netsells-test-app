@@ -16,7 +16,6 @@
 
 .application-header
     font-family: "Oswald"
-    /**font-family: "Heebo" */
     display: flex
     align-items: center
     justify-content: center
