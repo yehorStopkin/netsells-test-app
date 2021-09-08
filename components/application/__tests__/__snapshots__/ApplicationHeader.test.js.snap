@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApplicationHeader component default 1`] = `
+<div
+  class="application-header"
+>
+  <div
+    class="application-header__text"
+  >
+    Netsells
+  </div>
+   
+  <div
+    class="application-header__text"
+  >
+    JavaScript Challenge
+  </div>
+</div>
+`;
