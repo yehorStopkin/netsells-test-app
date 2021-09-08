@@ -16,6 +16,7 @@ describe('TheApplication', () => {
         };
         getters = {
             scheme: () => 0,
+            'application/phase': () => 0,
         };
         store = new Vuex.Store({
             actions, getters, 

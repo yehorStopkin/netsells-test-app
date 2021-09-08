@@ -2,12 +2,13 @@
 
 exports[`TheApplication component default 1`] = `
 <div
-  class="the-application light"
+  class="the-application light start"
 >
   <application-header-stub />
    
   <div
     class="the-application__component"
+    style="margin-top: 220px;"
   >
     <the-welcome-stub
       available-steps="0"
