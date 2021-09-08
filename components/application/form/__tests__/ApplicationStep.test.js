@@ -15,11 +15,31 @@ describe('ApplicationStep', () => {
         const wrapper = shallowMount(ApplicationStep, { propsData: { ...getData() } });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
+
+        const rootElement = wrapper.findAll('.application-step');
+        expect(rootElement.length).toBe(1);
+        
+        const titleElement = wrapper.findAll('.application-step__title');
+        expect(titleElement.length).toBe(1);
+
+        const progressBar = wrapper.findAll('.application-step__progress-bar');
+        expect(progressBar.length).toBe(1);
+
     });
 
-    test('component selected', () => {
+    test('check selected', () => {
         const wrapper = shallowMount(ApplicationStep, { propsData: { ...getData(0, true) } });
-        expect(wrapper.exists()).toBeTruthy();
-        expect(wrapper.element).toMatchSnapshot();
+        const rootElement = wrapper.find('.application-step');
+        expect(rootElement.classes().includes('selected')).toBe(true);
+    });
+
+    test('check click event', () => {
+        const currentStep = 2;
+        const wrapper = shallowMount(ApplicationStep, { propsData: { ...getData(currentStep) } });
+
+        const rootElement = wrapper.find('.application-step');
+        rootElement.trigger('click');
+
+        expect(wrapper.emitted()['step-selected'][0][0]).toEqual(currentStep);
     });
 });

@@ -18,22 +18,3 @@ exports[`ApplicationStep component default 1`] = `
   />
 </div>
 `;
-
-exports[`ApplicationStep component selected 1`] = `
-<div
-  class="application-step selected"
->
-  <div
-    class="application-step__title"
-  >
-    
-        Test title
-    
-  </div>
-   
-  <progress-bar-stub
-    class="application-step__progress-bar"
-    progress="0"
-  />
-</div>
-`;
