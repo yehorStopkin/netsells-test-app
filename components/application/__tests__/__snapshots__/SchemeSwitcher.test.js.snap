@@ -6,12 +6,14 @@ exports[`SchemeSwitcher component default 1`] = `
 >
   <div
     class="scheme-switcher__icon-wrapper"
+    data-test-id="darkThemeSwitcher"
   >
     <div
       class="scheme-switcher__icon"
     >
       <img
         alt="Dark mode."
+        data-test-id="moonImage"
         src="~/assets/common/moon.svg"
       />
     </div>
@@ -19,6 +21,7 @@ exports[`SchemeSwitcher component default 1`] = `
    
   <div
     class="scheme-switcher__icon-wrapper"
+    data-test-id="lightThemeSwitcher"
   >
     <div
       class="scheme-switcher__icon"

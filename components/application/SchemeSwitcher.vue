@@ -1,6 +1,7 @@
 <template>
     <div class="scheme-switcher">
         <div
+            data-test-id="darkThemeSwitcher"
             class="scheme-switcher__icon-wrapper"
             @click="onSetScheme(scheme.DARK)"
         >
@@ -15,6 +16,7 @@
 
                 <img
                     v-else
+                    data-test-id="moonImage"
                     src="~/assets/common/moon.svg"
                     :alt="darkSchemeAlt"
                 />
@@ -22,6 +24,7 @@
         </div>
 
         <div
+            data-test-id="lightThemeSwitcher"
             class="scheme-switcher__icon-wrapper"
             @click="onSetScheme(scheme.LIGHT)"
         >
@@ -36,6 +39,7 @@
 
                 <img
                     v-else
+                    data-test-id="sunImage"
                     src="~/assets/common/sun.svg"
                     :alt="lightSchemeAlt"
                 />
