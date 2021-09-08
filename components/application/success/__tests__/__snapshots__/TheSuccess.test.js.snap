@@ -26,6 +26,41 @@ exports[`TheSuccess component default 1`] = `
     class="the-success__actions"
   >
     <div
+      data-test-id="app-button"
+      text="HOME"
+      width="115"
+    />
+  </div>
+</div>
+`;
+
+exports[`TheSuccess component default 2`] = `
+<div
+  class="the-success"
+>
+  <div
+    class="the-success__title"
+  >
+    Success!
+  </div>
+   
+  <div
+    class="the-success__subtitle"
+  >
+    Thank You
+  </div>
+   
+  <div
+    class="the-success__message"
+  >
+    Our team will respond to you within the next 48h
+  </div>
+   
+  <div
+    class="the-success__actions"
+  >
+    <div
+      data-test-id="app-button"
       text="HOME"
       width="115"
     />

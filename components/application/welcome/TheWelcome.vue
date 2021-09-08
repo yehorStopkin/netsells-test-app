@@ -6,6 +6,7 @@
 
         <div class="the-welcome__actions">
             <app-button
+                data-test-id="app-button"
                 padding-top="24"
                 padding-bottom="29"
                 width="160"

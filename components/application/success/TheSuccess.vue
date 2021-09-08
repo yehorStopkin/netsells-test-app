@@ -8,6 +8,7 @@
 
         <div class="the-success__actions">
             <app-button
+                data-test-id="app-button"
                 width="115"
                 :text="nextButtonText"
                 @clicked="resetEvent"
