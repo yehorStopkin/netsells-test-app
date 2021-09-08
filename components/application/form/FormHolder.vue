@@ -1,6 +1,7 @@
 <template>
     <div class="form-holder">
         <form-holder-header
+            data-test-id="form-holder-header"
             :current-step="currentStep"
             :filing-of-personal-info="filingOfPersonalInfo"
             :filing-of-additional-info="filingOfAdditionalInfo"
@@ -12,6 +13,7 @@
 
         <component
             :is="currentForm"
+            data-test-id="dynamic-component"
             :step="currentStep"
             :personal-info.sync="personalInfo"
             :additional-info.sync="additionalInfo"

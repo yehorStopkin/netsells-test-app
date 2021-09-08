@@ -7,6 +7,7 @@ exports[`FormHolder component default 1`] = `
   <form-holder-header-stub
     availablesteps="0"
     currentstep="0"
+    data-test-id="form-holder-header"
     filingofadditionalfiles="0"
     filingofadditionalinfo="0"
     filingofpersonalinfo="0"
@@ -15,6 +16,7 @@ exports[`FormHolder component default 1`] = `
   <form-personal-info-stub
     additional-files="[object Object]"
     additional-info="[object Object]"
+    data-test-id="dynamic-component"
     personalinfo="[object Object]"
     step="0"
   />
