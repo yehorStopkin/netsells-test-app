@@ -15,7 +15,7 @@ describe('FormAdditionalFiles', () => {
     };
 
     test('component default', () => {
-        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { personalInfo: getAdditionalFiles(), step: 0 } });
+        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { additionalFiles: getAdditionalFiles(), step: 0 } });
         expect(wrapper.exists()).toBeTruthy();
         expect(wrapper.element).toMatchSnapshot();
 
@@ -33,7 +33,7 @@ describe('FormAdditionalFiles', () => {
     });
 
     test('test isCvDirty when field changed', () => {
-        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { personalInfo: getAdditionalFiles(_cv, _coverLetter), step: 0 } });
+        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { additionalFiles: getAdditionalFiles(_cv, _coverLetter), step: 0 } });
 
         expect(wrapper.vm.isCvDirty).toBe(false);
         wrapper.vm.onCvChanged();
@@ -41,7 +41,7 @@ describe('FormAdditionalFiles', () => {
     });
     
     test('test isCvDirty when onNextStep', () => {
-        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { personalInfo: getAdditionalFiles(_cv, _coverLetter), step: 0 } });
+        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { additionalFiles: getAdditionalFiles(_cv, _coverLetter), step: 0 } });
 
         expect(wrapper.vm.isCvDirty).toBe(false);
 
@@ -51,7 +51,7 @@ describe('FormAdditionalFiles', () => {
     });
 
     test('test isCvValid', () => {
-        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { personalInfo: getAdditionalFiles(_cv, _coverLetter), step: 0 } });
+        const wrapper = shallowMount(FormAdditionalFiles, { localVue, propsData: { additionalFiles: getAdditionalFiles(_cv, _coverLetter), step: 0 } });
 
         expect(wrapper.vm.isCvValid).toBe(true);
         wrapper.vm.cv = null;
