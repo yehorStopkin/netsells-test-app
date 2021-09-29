@@ -7,9 +7,10 @@ import http from '@/modules/requests';
  * @returns {Promise<any>}
  */
 export function sendApplication(request: FormData): Promise<any> {
-    if (useMock) {
+    // test comment
+    /* if (useMock) {
         return Promise.resolve();
-    }
+    } */
 
     return http({
         url: 'https://recruitment-submissions.netsells.co.uk/api/vacancies/javascript-developer/submissions',
